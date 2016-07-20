@@ -4,28 +4,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact Us</title>
-  <link rel="stylesheet"
-    href="<c:url value="resources/css/bootstrap.min.css" />" />
-<script src="<c:url value="resources/js/jquery-2.2.4.js" />"></script>
-<script src="<c:url value="resources/js/bootstrap.min.js" />"></script>
-<style>
-.navbar-default {
-  background-color:white;
-  background-image: none;
-  background-repeat: no-repeat;
-  color:black;
- }
-</style>
+  <%@ include file="Header.jsp" %>
 </head>
 <body background="<c:url value="resources\Images\backg4.jpg"/>">
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-<iframe src="Logo.jsp" frameborder="0" scrolling="no"></iframe>
-<iframe src="Search.jsp"frameborder="0" width="48%" scrolling="no"></iframe>
-<iframe src="Sign.jsp" frameborder="0" scrolling="no" ></iframe>
-</div>
 <div class="container">
 <br><br><br><br><br><br><br><br>
   <center><h2><font color="white">Contact Us</font></h2></center>
@@ -71,6 +53,9 @@
 <a href="https://www.youtube.com/" target="_blank" >&nbsp;&nbsp;&nbsp;&nbsp;<img src="<c:url value="resources\Images\youtube.png"/>" width=50 height=50>
 <a href="https://www.linkedin.com/" target="_blank" >&nbsp;&nbsp;&nbsp;&nbsp;<img src="<c:url value="resources\Images\linkedin.png"/>" width=50 height=50>
 <a href="https://www.instagram.com/?hl=en" target="_blank" >&nbsp;&nbsp;&nbsp;&nbsp;<img src="<c:url value="resources\Images\insta.png"/>" width=50 height=50>
+<a href="https://www.google.com/gmail/about/?utm_expid=63481880-29.xqIiSqMpRXum4SfypDSO5w.1&utm_referrer=https%3A%2F%2Fwww.google.co.in%2F" target="_blank" >&nbsp;&nbsp;&nbsp;&nbsp;<img src="<c:url value="resources\Images\mail.png"/>" width=50 height=50>
+<a href="https://www.skype.com/en/" target="_blank" >&nbsp;&nbsp;&nbsp;&nbsp;<img src="<c:url value="resources\Images\phone.png"/>" width=50 height=50>
+<a href="https://www.google.co.in/maps/place/NIIT/@17.4415732,78.4955737,17z/data=!3m1!4b1!4m5!3m4!1s0x3bcb9a105f0fba6f:0xcddd0e59a0f933c!8m2!3d17.4415732!4d78.4977624" target="_blank" >&nbsp;&nbsp;&nbsp;&nbsp;<img src="<c:url value="resources\Images\Google.jpeg"/>" width=50 height=50>
 </center>
 </body>
 </html>

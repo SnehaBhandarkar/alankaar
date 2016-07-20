@@ -5,11 +5,12 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Alankaar - Admin</title>
+<title>Alankaar - User</title>
 <SCRIPT type="text/javascript">
 	window.history.forward();
 	function noBack() { window.history.forward(); }
 </SCRIPT>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--<style>
 html
@@ -93,7 +94,7 @@ height: 680px;
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
 <iframe src="Logo.jsp" frameborder="0" scrolling="no" ></iframe>
 <iframe src="Search.jsp"frameborder="0" width="48%" scrolling="no"></iframe>
-<iframe src="Sign.jsp" frameborder="0" scrolling="no" width="28%" ></iframe>
+<iframe src="Sign.jsp" frameborder="0" scrolling="no" width="28%"></iframe>
 <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -104,66 +105,69 @@ height: 680px;
           </button>
         </div>
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-center">             
-            <li class="active"><a href="changepwd.jsp"><b>Change Password</b></a></li>       
+          <ul class="nav navbar-nav navbar-center">         
+            <li class="active"><a href="About Us.jsp"><b>About Us</b></a></li>       
+            <li><a href="Sale.jsp"><b>Sale!</b></a></li>
+            
 	        <li class="dropdown">
-	            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Manage</b><b class="caret"></b></a>
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Shop by Category</b><b class="caret"></b></a>
 	            <ul class="dropdown-menu multi-column columns-3">
 		            <div class="row">
 			            <div class="col-sm-4">
 				            <ul class="multi-column-dropdown">
-					            <li><b>Products</b></li>					      
+					            <li><b>Home Accents</b></li>					      
 					            <li class="divider"></li>
-					            <li><a href="products" target="_self">Add</a></li>
-					            <li><a href="products" target="_self">Remove</a></li>
-					            <li><a href="products" target="_self">Update</a></li>
-					            <!--  <li><a href="#">Search</a></li>-->
-					            <li><a href="products" target="_self">View all</a></li>
+					            <li><a href="Finial.jsp">Finials</a></li>
+					            <li><a href="CandleHolder.jsp">Candle Holder</a></li>
+					            <li><a href="Vase.jsp">Vases</a></li>
+					            <li><a href="Trays.jsp">Trays</a></li>
 				            </ul>
 			            </div>
 			            <div class="col-sm-4">
 				            <ul class="multi-column-dropdown">
-					            <li><b>Category</b></li>
+					            <li><b>Wall Decor</b></li>
 					            <li class="divider"></li>
-					            <li><a href="categories" target="_self">Add</a></li>
-					            <li><a href="categories" target="_self">Remove</a></li>
-					            <li><a href="categories" target="_self">Update</a></li>
-					            <!-- <li><a href="#">Search</a></li>-->
-					            <li><a href="categories" target="_self">View all</a></li>
+					            <li><a href="#">Canvas Art</a></li>
+					            <li><a href="#">Tapestries</a></li>
+					            <li><a href="#">Framed Art</a></li>
+					            <li><a href="#">Sculptures</a></li>
 				            </ul>
 			            </div>
-			            <!-- <div class="col-sm-4">
+			            <div class="col-sm-4">
 				            <ul class="multi-column-dropdown">
-					            <li><b>Customer</b></li>					           
+					            <li><b>Table Top</b></li>					           
 					            <li class="divider"></li>					  					            
-					            <li><a href="#">Add</a></li>
-					            <li><a href="#">Remove</a></li>
-					            <li><a href="#">Update details </a></li>
-					            <li><a href="#">Search</a></li>
-					            <li><a href="#" target="_self">View all</a></li>
-				            </ul>				            
-			            </div> -->
-			            <div class="col-sm-4">
+					            <li><a href="#">Crockery</a></li>
+					            <li><a href="#">Dinner Ware</a></li>
+					            <li><a href="#">Table Linens</a></li>
+					            <li><a href="#">Serveware</a></li>
+				            </ul>
+				            <li class="divider"></li>
 				            <ul class="multi-column-dropdown">
-					            <li><b>Suppliers</b></li>
-					            <li class="divider"></li>
-					            <li><a href="suppliers" target="_self">Add</a></li>
-					            <li><a href="suppliers" target="_self">Remove</a></li>
-					            <li><a href="suppliers" target="_self">Update</a></li>
-					            <!--  <li><a href="#">Search</a></li>-->
-					            <li><a href="suppliers" target="_self">View all</a></li>
+					            <li><b>Textiles</b></li>					           
+					            <li class="divider"></li>					  					            
+					            <li><a href="#">Bed Covers</a></li>
+					            <li><a href="#">Cushion Covers</a></li>
+					            <li><a href="#">Carpets</a></li>
+					            <li><a href="#">Towels</a></li>
 				            </ul>
 			            </div>
 		            </div>
 	            </ul>
 	        </li>
-              <li><a href="T&C.jsp"><b>Change T&C</b></a></li>
+                
+              
+             <li><a href="T&C.jsp"><b>T&C</b></a></li>          
+            <li><a href="Contact Us.jsp"><b>Contact Us</b></a></li>
+            <li><a href="Cart.jsp"><b>Your Cart</b></a></li>
+           <li><a href="Vieworder.jsp"><b>View Order</b></a></li> 
+           <li><a href="Trackorder.jsp"><b>Track Order</b></a></li> 
           </ul>         
         </div><!--/.nav-collapse -->
       </div>
 </div>
-<br><br><br><br><br><br><br><br><br><br><br>
-<b><center><font face="Comic Sans MS"><h1>Welcome, Admin!</h1></font></center></b>
+<br><br><br><br><br><br><br><br><br><br>
+<b><center><font face="Comic Sans MS"><h1>Welcome, User!</h1></font></center></b>
 <center><a class="btn btn-success" href="Sign In.jsp" target="_parent" style="float: right;"><span class="glyphicon glyphicon-log-out">Logout</span></a></center>
 <ul><b>
   <li>To change your password, go to Change Password.</li>

@@ -61,7 +61,7 @@ height:50%;
 	}
 </style>
 
-
+<link rel="shortcut icon" href = "<c:url value="resources/Images/favicon.ico" />"/>
 <link rel="stylesheet"
     href="<c:url value="resources/css/bootstrap.min.css" />" />
 <script src="<c:url value="resources/js/jquery-2.2.4.js" />"></script>
@@ -90,7 +90,7 @@ height: 680px;
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
 <iframe src="Logo.jsp" frameborder="0" scrolling="no" ></iframe>
 <iframe src="Search.jsp"frameborder="0" width="48%" scrolling="no"></iframe>
-<iframe src="Sign.jsp" frameborder="0" scrolling="no" ></iframe>
+<iframe src="Sign.jsp" frameborder="0" scrolling="no" width="28%"></iframe>
 <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -113,10 +113,10 @@ height: 680px;
 				            <ul class="multi-column-dropdown">
 					            <li><b>Home Accents</b></li>					      
 					            <li class="divider"></li>
-					            <li><a href="Finial.jsp" target="_blank">Finial</a></li>
-					            <li><a href="CandleHolder.jsp" target="_blank">Candle Holder</a></li>
-					            <li><a href="Vase.jsp" target="_blank">Vases</a></li>
-					            <li><a href="Trays.jsp" target="_blank">Trays</a></li>
+					            <li><a href="Finial.jsp" target="_parent">Finial</a></li>
+					            <li><a href="CandleHolder.jsp" target="_parent">Candle Holder</a></li>
+					            <li><a href="Vase.jsp" target="_parent">Vases</a></li>
+					            <li><a href="Trays.jsp" target="_parent">Trays</a></li>
 				            </ul>
 				           <!--  <li class="divider"></li>
 				            <ul class="multi-column-dropdown">
@@ -253,6 +253,7 @@ height: 680px;
     </a>
   </div>
 </div>
-
+<br><br><br>
+<%@ include file="Footer.jsp" %>
 </body>
 </html>

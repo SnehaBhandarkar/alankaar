@@ -6,20 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Vase</title>
-<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet"
-    href="<c:url value="resources/css/bootstrap.min.css" />" />
-<script src="<c:url value="resources/js/jquery-2.2.4.js" />"></script>
-<script src="<c:url value="resources/js/bootstrap.min.js" />"></script>
-<style>
-.navbar-default {
-  background-color:white;
-  background-image: none;
-  background-repeat: no-repeat;
-  color:black;
- }
-</style>
+<%@ include file="Header.jsp" %>
 <!--<style>
 .brightness {
     background-color: white;
@@ -43,11 +30,6 @@ img.opacity:hover {
 </style>
 </head>
 <body background="<c:url value="resources\Images\backg2.jpg"/>" style="background-repeat:no-repeat;background-size:cover;">
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-<iframe src="Logo.jsp" frameborder="0" scrolling="no"></iframe>
-<iframe src="Search.jsp"frameborder="0" width="48%" scrolling="no"></iframe>
-<iframe src="Sign.jsp" frameborder="0" scrolling="no" ></iframe>
-</div>
 <div class="container">
 <br><br><br><br><br><br><br><br><br><br>
 <b><center><font face="Cooper"><h1>Vase</h1></font></center></b>

@@ -2,21 +2,8 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<html lang="en">
+<html>
 <head>
-<meta charset="utf-8">
-<title>Alankaar - User</title>
-<%@ include file="Header.jsp" %>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--<style>
-html
-{
-width:100%;
-height:100%;
-background:url('E:\pic8.jpg')center center no-repeat;
-}
-</style>-->
-
 <style>
 #myCarousel
 {
@@ -85,12 +72,11 @@ height: 680px;
  }
 </style>
 </head>
-
 <body>
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
 <iframe src="Logo.jsp" frameborder="0" scrolling="no" ></iframe>
 <iframe src="Search.jsp"frameborder="0" width="48%" scrolling="no"></iframe>
-<iframe src="Sign.jsp" frameborder="0" scrolling="no" width="28%" ></iframe>
+<iframe src="Sign.jsp" frameborder="0" scrolling="no" width="28%"></iframe>
 <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -113,10 +99,10 @@ height: 680px;
 				            <ul class="multi-column-dropdown">
 					            <li><b>Home Accents</b></li>					      
 					            <li class="divider"></li>
-					            <li><a href="Finials.jsp" target="_blank">Finials</a></li>
-					            <li><a href="CandleHolder.jsp" target="_blank">Candle Holder</a></li>
-					            <li><a href="#">Vases</a></li>
-					            <li><a href="#">Trays</a></li>
+					            <li><a href="Finial.jsp">Finials</a></li>
+					            <li><a href="CandleHolder.jsp">Candle Holder</a></li>
+					            <li><a href="Vase.jsp">Vases</a></li>
+					            <li><a href="Trays.jsp">Trays</a></li>
 				            </ul>
 			            </div>
 			            <div class="col-sm-4">
@@ -162,7 +148,6 @@ height: 680px;
         </div><!--/.nav-collapse -->
       </div>
 </div>
-<br><br><br><br><br><br><br><br><br><br>
-<b><center><font face="Comic Sans MS"><h1>Welcome, User!</h1></font></center></b>
+
 </body>
 </html>

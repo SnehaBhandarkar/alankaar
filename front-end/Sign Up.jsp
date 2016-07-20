@@ -5,28 +5,10 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sign Up</title>
-<link rel="stylesheet"
-    href="<c:url value="resources/css/bootstrap.min.css" />" />
-<script src="<c:url value="resources/js/jquery-2.2.4.js" />"></script>
-<script src="<c:url value="resources/js/bootstrap.min.js" />"></script>
-<style>
-.navbar-default {
-  background-color:white;
-  background-image: none;
-  background-repeat: no-repeat;
-  color:black;
- }
-</style>
+  <%@ include file="Header.jsp" %>
 </head>
 <body background="<c:url value="resources\Images\back4.jpg"/>">
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-<iframe src="Logo.jsp" frameborder="0" scrolling="no"></iframe>
-<iframe src="Search.jsp"frameborder="0" width="48%" scrolling="no"></iframe>
-<iframe src="Sign.jsp" frameborder="0" scrolling="no" ></iframe>
-</div>
 <div class="container">
 <br><br><br><br><br><br><br><br>
   <center><h2><font color="white">Sign Up</font></h2></center>

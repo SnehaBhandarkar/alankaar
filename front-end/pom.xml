@@ -14,7 +14,7 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
+     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-beans</artifactId>
       <version>4.1.4.RELEASE</version>
@@ -24,7 +24,7 @@
       <artifactId>spring-context</artifactId>
       <version>4.1.4.RELEASE</version>
     </dependency>
-     <dependency>
+    <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
       <version>4.1.4.RELEASE</version>
@@ -39,12 +39,12 @@
       <artifactId>spring-webmvc</artifactId>
       <version>4.1.4.RELEASE</version>
     </dependency>
-    <dependency>
+ <dependency>
 <groupId>jstl</groupId>
 <artifactId>jstl</artifactId>
 <version>1.2</version>
 </dependency>
-<dependency>
+    <dependency>
       <groupId>taglibs</groupId>
       <artifactId>standard</artifactId>
       <version>1.1.1</version>
@@ -64,8 +64,24 @@
 	<scope>runtime</scope>
 	<type>tld</type>
     </dependency>
+    <dependency>
+    <groupId>com.niit</groupId>
+    <artifactId>Backend</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    </dependency>
   </dependencies>
   <build>
     <finalName>Store</finalName>
+    <plugins>
+        <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+            <source>1.7</source>
+            <target>1.7</target>
+        </configuration>
+    </plugin>
+    </plugins>
   </build>
 </project>

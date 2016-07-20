@@ -10,14 +10,14 @@
     href="<c:url value="resources/css/bootstrap.min.css" />" />
 <script src="<c:url value="resources/js/jquery-2.2.4.js" />"></script>
 <script src="<c:url value="resources/js/bootstrap.min.js" />"></script>
-<title>Insert title here</title>
 </head>
 <body>
 <nav style="float:right";>
 <div id="sign">
   <a class="btn btn-primary" href="Home.jsp" target="_parent"><span class="glyphicon glyphicon-home"></span></a>
-  <a class="btn btn-primary" href="Sign Up.jsp" target="_blank"><span class="glyphicon glyphicon-user"> Sign Up</span></a>
-  <a class="btn btn-success" href="Sign In.jsp" target="_blank"><span class="glyphicon glyphicon-log-in"> Sign In</span></a>
+  <a class="btn btn-primary" href="NewRegister.jsp" target="_parent"><span class="glyphicon glyphicon-user"> Sign Up</span></a>
+  <a class="btn btn-success" href="Sign In.jsp" target="_parent"><span class="glyphicon glyphicon-log-in"> Sign In</span></a>
+  <a class="btn btn-info" href="Cart.jsp" target="_parent"><span class="glyphicon glyphicon-shopping-cart"></span></a>
 </div>
   
 <!-- <a href="Sign Up.jsp" target="_blank">Sign Up|</a>

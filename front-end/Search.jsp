@@ -22,10 +22,8 @@
                     <input type="text" class="form-control input-lg" placeholder="Search here" />
                     <span class="input-group-btn">
                         <button class="btn btn-info btn-lg" type="button">
-                            &nbsp<i class="glyphicon glyphicon-search"> Search</i>
-                        </button>
-                        
-                        </button>
+                            &nbsp;<i class="glyphicon glyphicon-search"> Search</i>
+                        </button>                                       
                     </span>
                 </div>
             </div>

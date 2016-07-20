@@ -5,28 +5,10 @@
 <html>
 <head>
 <title>About Us</title>
-<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet"
-    href="<c:url value="resources/css/bootstrap.min.css" />" />
-<script src="<c:url value="resources/js/jquery-2.2.4.js" />"></script>
-<script src="<c:url value="resources/js/bootstrap.min.js" />"></script>
-<style>
-.navbar-default {
-  background-color:white;
-  background-image: none;
-  background-repeat: no-repeat;
-  color:black;
- }
-</style>
+<%@ include file="Header.jsp" %>
 </head>
 <body background="<c:url value="resources\Images\back1.jpg"/>" ></body>
 <font color="maroon" face="Lucida Calligraphy">
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-<iframe src="Logo.jsp" frameborder="0" scrolling="no"></iframe>
-<iframe src="Search.jsp"frameborder="0" width="48%" scrolling="no"></iframe>
-<iframe src="Sign.jsp" frameborder="0" scrolling="no" ></iframe>
-</div>
 <br><br><br><br><br><br><br><br>
 <center><img src="<c:url value="resources\Images\9.png"/>" width=400 height=250></center>
 <p>
