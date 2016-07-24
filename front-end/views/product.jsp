@@ -5,7 +5,7 @@
 <html>
 <head>
 <title>Product Page</title>
-<%@ include file="Header.jsp" %>
+<%@ include file="Headeradmin.jsp" %>
 <style type="text/css">
 .tg {
 	border-collapse: collapse;

@@ -5,7 +5,7 @@
 <html>
 <head>
 <title>Supplier Page</title>
-<%@ include file="Header.jsp" %>
+<%@ include file="Headeradmin.jsp" %>
 <style type="text/css">
 .tg {
 	border-collapse: collapse;
@@ -49,7 +49,7 @@
 </style>
 </head>
 <body background="<c:url value="resources\Images\supback.png"/>">
-<center><br><br><br><br><br><br><br><br><br>
+<center><br><br><br><br><br><br><br><br><br><br><br>
 	<h1><u>Add a Supplier</u></h1>
 
 	<c:url var="addAction" value="/supplier/add"></c:url>
@@ -65,7 +65,6 @@
 						<td><form:input path="id" disabled="true" readonly="true" />
 						</td>
 					</c:when>
-
 					<c:otherwise>
 						<td><form:input path="id" pattern ="^[A-Z][0-9]$" required="true" title="id should contains only 1 letter and 1 number" /></td>
 					</c:otherwise>
@@ -97,7 +96,7 @@
 	<h3>Supplier List</h3>
 	<c:if test="${!empty supplierList}">
 		<table class="tg">
-			<tr>
+			 <tr>
 				<th width="80">Supplier ID</th>
 				<th width="120">Supplier Name</th>
 				<th width="120">Supplier Address</th>
@@ -109,7 +108,7 @@
 					<td>${supplier.id}</td>
 					<td>${supplier.name}</td>
 					<td>${supplier.address}</td>
-					<td><a href="<c:url value='supplier/edit/${supplier.id}' />">Edit</a></td>
+					<td><a href="<c:url value='supplier/edit/${supplier.id}' />" >Edit</a></td>
 					<td><a href="<c:url value='supplier/remove/${supplier.id}' />">Delete</a></td>
 				</tr>
 			</c:forEach>

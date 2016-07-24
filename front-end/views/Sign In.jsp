@@ -62,8 +62,8 @@ ${message}
      <tr><td><font color="white"><h4>User Name:</h4></font></td><td> <input type="text" name = "username" id = "username" placeholder="Enter your username here"></td></tr>
    <tr><td><font color="white"><h4>Password:</h4></font></td><td> <input type="password" name = "password" id = "password" placeholder="Enter your password here"></td></tr>
           <tr><td><input type="checkbox" name="r1"><font color="white"> Remember me</font></label></td></tr>      
-   <tr><td><a href="forpwd.jsp"><font color="white"><b>Forgot Password?</b></font></a><br></td></tr>
-   <tr><td><font color="white"><b>New to Alankaar?</b></font> <a href="NewRegister.jsp"><font color="white">Create an account</font></a></td></tr>
+   <tr><td><a href="forpwd"><font color="white"><b>Forgot Password?</b></font></a><br></td></tr>
+   <tr><td><font color="white"><b>New to Alankaar?</b></font> <a href="NewRegister"><font color="white">Create an account</font></a></td></tr>
    <br><br>
    <tr><td><button type="submit" class="btn btn-success">Submit</button></td>
         <td><button type="reset" class="btn btn-default">Reset</button> </td></tr>       

@@ -5,12 +5,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Alankaar - User</title>
-<SCRIPT type="text/javascript">
-	window.history.forward();
-	function noBack() { window.history.forward(); }
-</SCRIPT>
-
+<title>Alankaar - Home</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--<style>
 html
@@ -66,12 +61,13 @@ height:50%;
 	}
 </style>
 
-
+<link rel="shortcut icon" href = "<c:url value="resources/Images/favicon.ico" />"/>
 <link rel="stylesheet"
     href="<c:url value="resources/css/bootstrap.min.css" />" />
 <script src="<c:url value="resources/js/jquery-2.2.4.js" />"></script>
 <script src="<c:url value="resources/js/bootstrap.min.js" />"></script>
 
+    
 <style>
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -90,7 +86,7 @@ height: 680px;
 </style>
 </head>
 
-<body background="<c:url value="resources\Images\userback.png"/>" onload="noBack();" onpageshow="if (event.persisted) noBack();" onunload="">
+<body>
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
 <iframe src="Logo" frameborder="0" scrolling="no" ></iframe>
 <iframe src="Search"frameborder="0" width="48%" scrolling="no"></iframe>
@@ -105,9 +101,8 @@ height: 680px;
           </button>
         </div>
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-center">  
-          <li class="active"><a href="User"><b>Home</b></a></li>       
-            <li><a href="About Us"><b>About Us</b></a></li>       
+          <ul class="nav navbar-nav navbar-center">         
+            <li class="active"><a href="About Us"><b>About Us</b></a></li>       
             <li><a href="Sale"><b>Sale!</b></a></li>
             
 	        <li class="dropdown">
@@ -118,11 +113,20 @@ height: 680px;
 				            <ul class="multi-column-dropdown">
 					            <li><b>Home Accents</b></li>					      
 					            <li class="divider"></li>
-					            <li><a href="Finial">Finials</a></li>
-					            <li><a href="CandleHolder">Candle Holder</a></li>
-					            <li><a href="Vase">Vases</a></li>
-					            <li><a href="Trays">Trays</a></li>
+					            <li><a href="Finial" target="_parent">Finial</a></li>
+					            <li><a href="CandleHolder" target="_parent">Candle Holder</a></li>
+					            <li><a href="Vase" target="_parent">Vases</a></li>
+					            <li><a href="Trays" target="_parent">Trays</a></li>
 				            </ul>
+				           <!--  <li class="divider"></li>
+				            <ul class="multi-column-dropdown">
+					            <li><b>Textiles</b></li>					           
+					            <li class="divider"></li>					  					            
+					            <li><a href="#">Bed Covers</a></li>
+					            <li><a href="#">Cushion Covers</a></li>
+					            <li><a href="#">Carpets</a></li>
+					            <li><a href="#">Towels</a></li>
+				            </ul> -->
 			            </div>
 			            <div class="col-sm-4">
 				            <ul class="multi-column-dropdown">
@@ -143,7 +147,7 @@ height: 680px;
 					            <li><a href="#">Table Linens</a></li>
 					            <li><a href="#">Serveware</a></li>
 				            </ul>
-				            <li class="divider"></li>
+				            <!-- <li class="divider"></li>
 				            <ul class="multi-column-dropdown">
 					            <li><b>Textiles</b></li>					           
 					            <li class="divider"></li>					  					            
@@ -151,7 +155,7 @@ height: 680px;
 					            <li><a href="#">Cushion Covers</a></li>
 					            <li><a href="#">Carpets</a></li>
 					            <li><a href="#">Towels</a></li>
-				            </ul>
+				            </ul> -->
 			            </div>
 		            </div>
 	            </ul>
@@ -160,20 +164,96 @@ height: 680px;
               
              <li><a href="Terms"><b>T&C</b></a></li>          
             <li><a href="Contact Us"><b>Contact Us</b></a></li>
-            <li><a href="YourCart"><b>Your Cart</b></a></li>
-           <li><a href="Vieworder"><b>View Order</b></a></li> 
-           <li><a href="Trackorder"><b>Track Order</b></a></li> 
+           
           </ul>         
         </div><!--/.nav-collapse -->
       </div>
 </div>
-<br><br><br><br><br><br><br><br><br><br>
-<b><center><font face="Comic Sans MS"><h1>Welcome, User!</h1></font></center></b>
-<center><a class="btn btn-success" href="Sign In" target="_parent" style="float: right;"><span class="glyphicon glyphicon-log-out">Logout</span></a></center>
-<ul><b>
-  <li>Navigate through all the links above to perform your respective task.</li>
-  <li>Shopby category will take you to all the various categories to choose from.</li>
 
-  </b></ul>
+<center>
+<!--<a href="About Us.html"><h3>About Us|</a>
+<a href="Category.html">Shop by Category|</a>
+<a href="Sale.html">Sale!|</a>
+<a href="T&C.html">T&C|</a>
+<a href="Contact Us.html">Contact Us|</h3></a>
+<iframe src="About Us.html" frameborder="0" scrolling="no" height="10" width="40"></iframe>
+<iframe src="Shop by Category.html" frameborder="0" scrolling="no" height="10" width="40"></iframe>
+<iframe src="Sale!.html" frameborder="0" scrolling="no" height="10" width="40">Sale</iframe>
+<iframe src="T&C.html" frameborder="0" scrolling="no" height="10" width="40"></iframe>
+<iframe src="Contact Us.html" frameborder="0" scrolling="no" height="10" width="40"></iframe>-->
+</center>
+</nav>
+
+
+<div class="container" style="width:100%;height:50;">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="height:50%;">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="<c:url value="resources\Images\painting1.jpg"/>" alt="Maple" width="800" height="100" >
+        <div class="carousel-caption">
+          <h3>Maple</h3>
+          <p>The wonderful orange and red maple leaf art by the river bank</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="<c:url value="resources\Images\carpet2.jpg"/>" alt="Creamy" width="800" height="100">
+        <div class="carousel-caption">
+          <h3>Creamy</h3>
+          <p>Elegant carpet with etching in your living room</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="<c:url value="resources\Images\vase2.jpg"/>" alt="Cane Vase" width="800" height="100">
+        <div class="carousel-caption">
+          <h3>Cane Vase</h3>
+          <p>Insert some immitations and voila!</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="<c:url value="resources\Images\jars1.jpeg"/>" alt="Decorative Jars" width="800" height="100">
+        <div class="carousel-caption">
+          <h3>Decorative Jars</h3>
+          <p>Adorns your Tipois</p>
+        </div>
+      </div>
+      
+      <div class="item">
+       <img src="<c:url value="resources\Images\can1.jpg"/>" alt="Candle Holder" width="800" height="100">
+        <div class="carousel-caption">
+          <h3>Candle Holders</h3>
+          <p>Lightens up your walls and tables</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<br><br><br>
+<%@ include file="Footer.jsp" %>
 </body>
 </html>

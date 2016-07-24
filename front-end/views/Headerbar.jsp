@@ -50,7 +50,7 @@ height:50%;
 
 
 <link rel="stylesheet"
-    href="<c:url value="resources/css/bootstrap.min.css" />" />
+    href="<c:url value="resources/css/bootstrap.min.css" />"/>
 <script src="<c:url value="resources/js/jquery-2.2.4.js" />"></script>
 <script src="<c:url value="resources/js/bootstrap.min.js" />"></script>
 
@@ -73,9 +73,9 @@ height: 680px;
 </head>
 <body>
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-<iframe src="Logo.jsp" frameborder="0" scrolling="no" ></iframe>
-<iframe src="Search.jsp"frameborder="0" width="48%" scrolling="no"></iframe>
-<iframe src="Sign.jsp" frameborder="0" scrolling="no" width="28%"></iframe>
+<iframe src="Logo" frameborder="0" scrolling="no" ></iframe>
+<iframe src="Search"frameborder="0" width="48%" scrolling="no"></iframe>
+<iframe src="Sign" frameborder="0" scrolling="no" width="28%"></iframe>
 <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -86,9 +86,10 @@ height: 680px;
           </button>
         </div>
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-center">         
-            <li class="active"><a href="About Us.jsp"><b>About Us</b></a></li>       
-            <li><a href="Sale.jsp"><b>Sale!</b></a></li>
+          <ul class="nav navbar-nav navbar-center">  
+          <li class="active"><a href="User"><b>Home</b></a></li>       
+            <li class="active"><a href="About Us"><b>About Us</b></a></li>       
+            <li><a href="Sale"><b>Sale!</b></a></li>
             
 	        <li class="dropdown">
 	            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Shop by Category</b><b class="caret"></b></a>
@@ -98,10 +99,10 @@ height: 680px;
 				            <ul class="multi-column-dropdown">
 					            <li><b>Home Accents</b></li>					      
 					            <li class="divider"></li>
-					            <li><a href="Finials.jsp">Finials</a></li>
-					            <li><a href="CandleHolder.jsp">Candle Holder</a></li>
-					            <li><a href="#">Vases</a></li>
-					            <li><a href="#">Trays</a></li>
+					            <li><a href="Finial">Finials</a></li>
+					            <li><a href="CandleHolder">Candle Holder</a></li>
+					            <li><a href="Vase">Vases</a></li>
+					            <li><a href="Trays">Trays</a></li>
 				            </ul>
 			            </div>
 			            <div class="col-sm-4">
@@ -138,11 +139,11 @@ height: 680px;
 	        </li>
                 
               
-             <li><a href="T&C.jsp"><b>T&C</b></a></li>          
-            <li><a href="Contact Us.jsp"><b>Contact Us</b></a></li>
-            <li><a href="Cart.jsp"><b>Your Cart</b></a></li>
-           <li><a href="Vieworder.jsp"><b>View Order</b></a></li> 
-           <li><a href="Trackorder.jsp"><b>Track Order</b></a></li> 
+             <li><a href="Terms"><b>T&C</b></a></li>          
+            <li><a href="Contact Us"><b>Contact Us</b></a></li>
+            <li><a href="YourCart"><b>Your Cart</b></a></li>
+           <li><a href="Vieworder"><b>View Order</b></a></li> 
+           <li><a href="Trackorder"><b>Track Order</b></a></li> 
           </ul>         
         </div><!--/.nav-collapse -->
       </div>

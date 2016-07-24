@@ -18,7 +18,7 @@
  }
 </style>
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-<iframe src="Logo.jsp" frameborder="0" scrolling="no"></iframe>
-<iframe src="Search.jsp"frameborder="0" width="48%" scrolling="no"></iframe>
-<iframe src="Sign.jsp" frameborder="0" scrolling="no" width="28%" ></iframe>
+<iframe src="Logo" frameborder="0" scrolling="no"></iframe>
+<iframe src="Search"frameborder="0" width="48%" scrolling="no"></iframe>
+<iframe src="Sign" frameborder="0" scrolling="no" width="28%" ></iframe>
 </div>
