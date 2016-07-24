@@ -18,10 +18,12 @@ import com.niit.backend.dao.CategoryDAO;
 import com.niit.backend.dao.CategoryDAOImpl;
 import com.niit.backend.dao.UserDAO;
 import com.niit.backend.dao.UserDAOImpl;
+//import com.niit.backend.model.Cart;
 import com.niit.backend.model.Category;
 import com.niit.backend.model.Product;
 import com.niit.backend.model.Supplier;
 import com.niit.backend.model.User;
+import com.niit.backend.model.UserDetails;
 
 @Configuration
 @ComponentScan("com.niit.backend")
@@ -60,6 +62,8 @@ public class ApplicationContextConfig {
 	    	sessionBuilder.addAnnotatedClasses(Supplier.class);
 	    	sessionBuilder.addAnnotatedClasses(User.class);
 	    	sessionBuilder.addAnnotatedClasses(Product.class);
+	    	sessionBuilder.addAnnotatedClasses(UserDetails.class);
+	    	//sessionBuilder.addAnnotatedClasses(Cart.class);
 	    	return sessionBuilder.buildSessionFactory();
 	    	
 	    }
@@ -85,5 +89,5 @@ public class ApplicationContextConfig {
 	    public CategoryDAO geCategorDao(SessionFactory sessionFactory) {
 	    	return new CategoryDAOImpl(sessionFactory);
 	    }
-
+	 
 }
