@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.niit.backend.dao.SupplierDAO;
 import com.niit.backend.model.Supplier;
+import com.niit.backend.util.Util;
 
 @Controller
 public class SupplierControl {
@@ -34,8 +35,9 @@ private SupplierDAO supplierDAO;
 	//For add and update supplier both
 	@RequestMapping(value= "/supplier/add", method = RequestMethod.POST)
 	public String addSupplier(@ModelAttribute("supplier") Supplier supplier){
-		
-	
+		Util u = new Util();
+		String newId = u.replaceComma(supplier.getId(),",","");
+		supplier.setId(newId);	
 			supplierDAO.saveOrUpdate(supplier);
 		
 		return "redirect:/suppliers";

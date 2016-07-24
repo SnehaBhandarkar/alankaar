@@ -14,7 +14,7 @@ import com.niit.backend.model.UserDetails;
 public class UserControl {
 	
 	@Autowired
-	UserDetailsDAO userdetailsdao;
+	UserDetailsDAO userDetailsDao;
 	UserDetails user;
 	
 	@RequestMapping("/UserDetails")
@@ -54,8 +54,8 @@ public class UserControl {
 		user.setGender(gender);
 		
 		System.out.println("in user details controller");
-		userdetailsdao.saveOrUpdate(user);
-		ModelAndView mv = new ModelAndView("Cart");
+		userDetailsDao.saveOrUpdate(user);
+		ModelAndView mv = new ModelAndView("Sign In");
 		return mv;
 	}
 

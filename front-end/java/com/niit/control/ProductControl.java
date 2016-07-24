@@ -15,6 +15,7 @@ import com.niit.backend.dao.SupplierDAO;
 import com.niit.backend.model.Category;
 import com.niit.backend.model.Product;
 import com.niit.backend.model.Supplier;
+import com.niit.backend.util.Util;
 
 @Controller
 public class ProductControl {
@@ -49,7 +50,9 @@ public class ProductControl {
 	// For adding and updating product
 	@RequestMapping(value = "/product/add", method = RequestMethod.POST)
 	public String addProduct(@ModelAttribute("product") Product product) {
-
+		Util u = new Util();
+		String newId = u.replaceComma(product.getId(),",","");
+		product.setId(newId);
 		Category category = categoryDAO.getByName(product.getCategory().getName());
 		categoryDAO.saveOrUpdate(category);  
 
@@ -61,6 +64,7 @@ public class ProductControl {
 		
 		product.setCategory_id(category.getId());
 		product.setSupplier_id(supplier.getId());
+		
 		productDAO.saveOrUpdate(product);
 
 		return "redirect:/products";
